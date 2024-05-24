@@ -9,8 +9,13 @@ public class exercicio14 {
         System.out.println("Digite um número natural: ");
         int numero = scanner.nextInt();
 
-        for (int i = 0; i <= numero; i += 2){
-            System.out.println(i);
+        if (numero <= -1) {
+            System.out.println("Digite um número positivo: ");
+        } else {
+            System.out.println("Os números pares na decrecente são: ");
+            for (int i = numero; i >= 0; i -= 2) {
+                System.out.println(i);
+            }
         }
     }
 }

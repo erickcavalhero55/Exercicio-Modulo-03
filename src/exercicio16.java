@@ -9,8 +9,12 @@ public class exercicio16 {
         System.out.println("Digite um número natural: ");
         int numero = scanner.nextInt();
 
-        for (int i = numero; i >= 1; i--){
-            System.out.println(2 * i + 1);
+        if (numero> 0 && numero % 2 != 0) {
+            for (int i = numero; i >= 1; i -= 2) {
+                System.out.println(i);
+            }
+        } else {
+            System.out.println("O número deve ser positivo e ímpar.");
         }
     }
 }
